@@ -2,7 +2,7 @@ $:.unshift File.expand_path('../../lib', __FILE__)
 require 'path_operator'
 
 describe PathOperator do
-  before { PathOperator.include! }
+  before { PathOperator.load! }
   
   it 'should join strings as paths' do
     ('a' / 'b').should == 'a/b'
@@ -10,7 +10,7 @@ describe PathOperator do
   
   it 'should transform strings and symbols to paths' do
     [:asdf, 'asdf', Pathname.new('asdf')].each do |s|
-      s.to_path.should == Pathname.new(s.to_s)
+      s.as_path.should == Pathname.new(s.to_s)
     end
   end
 end

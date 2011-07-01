@@ -1,4 +1,5 @@
-require 'spec_helper'
+$:.unshift File.expand_path('../../lib', __FILE__)
+require 'path_operator'
 
 describe PathOperator do
   before { PathOperator.include! }

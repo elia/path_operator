@@ -11,7 +11,7 @@ module PathOperator
     end
   end
   
-  module Pathname
+  module Pathnameish
     def / *others
       join *others.map(&:to_s)
     end
@@ -34,6 +34,6 @@ module PathOperator
     ::Symbol.send :include, PathOperator::Stringish
     
     require 'pathname'
-    ::Pathname.send :include, PathOperator::Pathname
+    ::Pathname.send :include, PathOperator::Pathnameish
   end
 end

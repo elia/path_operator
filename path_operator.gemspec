@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = ''
   s.summary     = %q{Adds the / operator to String, Symbol and Pathname}
   s.description = %q{Adds the / operator to String, Symbol and Pathname}
+  s.licence     = 'MIT'
 
   s.rubyforge_project = 'path_operator'
 

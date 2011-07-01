@@ -1,6 +1,6 @@
 # PathOperator
 
-With PathOperator you can do too:
+With PathOperator you can do this too:
 
 ``` ruby
 require 'path_operator'

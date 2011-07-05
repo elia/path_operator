@@ -32,6 +32,7 @@ module PathOperator
   
   def self.load!
     ::String.send   :include, PathOperator::Stringish
+    ::Symbol.send   :include, PathOperator::Stringish
     ::Pathname.send :include, PathOperator::Pathnameish
   end
 end
